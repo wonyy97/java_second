@@ -11,11 +11,11 @@ public class MyArrayListTest4 {
         }
 
         List<Integer> rList = list.stream().map(item -> item + 4).toList();
-        System.out.println(rList);
         System.out.println(list);
+        System.out.println(rList);
 */
         MyArrayList ma = new MyArrayList();
-        for (int i = 100; i < 120; i++) {
+        for (int i = 100; i <= 120; i++) {
             ma.add(i);
         }
 

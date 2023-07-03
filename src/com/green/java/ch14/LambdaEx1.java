@@ -2,14 +2,14 @@ package com.green.java.ch14;
 
 
 @FunctionalInterface
-interface Myfunction {
+interface MyFunction {
     void run();
 }
 
 
 
 public class LambdaEx1 {
-    static void execute(Myfunction f) {f.run();}
+    static void execute(MyFunction f) {f.run();}
 
     public static void main(String[] args) {
 //        Myfunction mf1 = getMyFunction();
@@ -18,7 +18,7 @@ public class LambdaEx1 {
         execute(getMyFunction());
     }
 
-    public static Myfunction getMyFunction() {
+    public static MyFunction getMyFunction() {
         return () -> System.out.println("mf1");
     }
 }

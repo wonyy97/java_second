@@ -31,6 +31,17 @@ public class MyArrayList {
         this.arr = temp;
     }
 
+    public static MyArrayList asList(int ...num) {
+        MyArrayList temp = new MyArrayList();
+        for (int i = 0; i < num.length; i++) {
+            int val = num[i];
+            temp.add(val);
+        }
+        return temp;
+    }
+
+
+
     public void forEach(MyConsumer consumer) {
 
         for (int i = 0; i < this.arr.length; i++) {
